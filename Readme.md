@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/30/user/1701403).
-* Наставник: `Неизвестно`.
+* Студент: [Алиса Лобжанидзе](https://up.htmlacademy.ru/htmlcss/30/user/1701403).
+* Наставник: [Ольга Юзич](https://htmlacademy.ru/profile/id350391).
 
 ---
 
