@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Каталог</title>
+  </head>
+  <body>
+
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="https://via.placeholder.com/138x70" alt="Логотип Седона">
+        </a>
+        <ul>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a>Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1>Фильтр гостиниц</h1>
+        <form method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="appartment" id="appartment" checked>
+                <label for="appartment">Аппартаменты</label>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (р):</legend>
+            <!-- Для слайдера ниже пока что временное решение, здесь как я понимаю тоже понадобится js-->
+            <p><span>От 0</span> | <span>До 3000</span></p>
+            <input id="price-per-day" type="range" min="0" max="3000" step="100">
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
+      </section>
+      <section>
+        <p>Найдено: 3</p>
+        <h2>Сортировка:</h2>
+        <a>По цене</a>
+        <a href="!#">По типу</a>
+        <a href="!#">По рейтингу</a>
+      </section>
+      <section>
+        <h2>Список гостиниц</h2>
+        <ul>
+          <li>
+            <h3>Amara Resort & Spa</h3>
+            <img src="https://via.placeholder.com/135x90" alt="Amara Resort & Spa">
+            <div>
+              <div>Гостиница</div>
+              <div>От 4000 р.</div>
+              <div>Рейтинг: 8,5</div>
+              <button type="button" name="details">Подробнее</button>
+              <button type="button" name="book">Забронировать</button>
+            </div>
+          </li>
+          <li>
+            <h3>Desert Quail Inn</h3>
+            <img src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
+            <div>
+              <div>Мотель</div>
+              <div>От 3000 р.</div>
+              <div>Рейтинг: 8,9</div>
+              <button type="button" name="details">Подробнее</button>
+              <button type="button" name="book">Забронировать</button>
+            </div>
+          </li>
+          <li>
+            <h3>Villas at Poco Diablo</h3>
+            <img src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
+            <div>
+              <div>Аппартаменты</div>
+              <div>От 2000 р.</div>
+              <div>Рейтинг: 9,2</div>
+              <button type="button" name="details">Подробнее</button>
+              <button type="button" name="book">Забронировать</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h2>Контакты</h2>
+        <p>
+          #VISITSEDONA<br>
+          ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+        </p>
+      </section>
+      <section>
+        <h2>Социальные сети</h2>
+        <ul>
+          <li>
+            <a href="!#">
+              <img src="https://via.placeholder.com/46x48" alt="Логотип Твиттер">
+            </a>
+          </li>
+          <li>
+            <a href="!#">
+              <img src="https://via.placeholder.com/46x48" alt="Логотип Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a href="!#">
+              <img src="https://via.placeholder.com/46x48" alt="Логотип Ютьюб">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p>
+        WEBSITE BY:
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="https://via.placeholder.com/115x41" alt="Логотип HTML academy">
+        </a>
+      </p>
+    </footer>
+
+  </body>
+</html>
