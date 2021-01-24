@@ -15,7 +15,7 @@
           <li><a href="blank.html">Информация</a></li>
           <li><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li><a href="!#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -58,9 +58,8 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (р):</legend>
-            <!-- Для слайдера ниже пока что временное решение, здесь как я понимаю тоже понадобится js-->
-            <p><span>От 0</span> | <span>До 3000</span></p>
-            <input id="price-per-day" type="range" min="0" max="3000" step="100">
+            От <input type="number" name="min-price" step="100" min="0" value="0"> | До <input type="number" name="max-price" step="100" min="500" value="3000">
+            <div>Здесь будет слайдер</div>
           </fieldset>
           <button type="submit">Показать</button>
         </form>
@@ -68,7 +67,7 @@
       <section>
         <p>Найдено: 3</p>
         <h2>Сортировка:</h2>
-        <a>По цене</a>
+        <a href="!#">По цене</a>
         <a href="!#">По типу</a>
         <a href="!#">По рейтингу</a>
       </section>
