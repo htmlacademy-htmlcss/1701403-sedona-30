@@ -6,7 +6,131 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header>
+      <nav>
+        <a>
+          <img src="https://via.placeholder.com/138x70" alt="Логотип Седона">
+        </a>
+        <ul>
+          <li><a href="blank.html">Информация</a></li>
+          <li><a href="blank.html">Фото и видео</a></li>
+          <li><a href="blank.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <img src="https://via.placeholder.com/456x350" alt="Добро пожаловать в Седона">
+    </header>
+
+    <main>
+      <h1>Седона</h1>
+      <section>
+        <h2>Преимущества</h2>
+        <p><strong>Седона - небольшой городок в Аризоне, заслуживающий большего!</strong></p>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <ol>
+          <li>
+            <h3>Настоящий городок</h3>
+            <span>-№1-</span>
+            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <ul>
+              <li>
+                <h4>Жильё</h4>
+                <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li>
+                <h4>Еда</h4>
+                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li>
+                <h4>Сувениры</h4>
+                <p>Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Там есть мост дьявола</h3>
+            <span>-№2-</span>
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </li>
+          <li>
+            <h3>Небольшая площадь</h3>
+            <span>-№3-</span>
+            <p>Все достопримечательности находятся очень близко</p>
+          </li>
+          <li>
+            <h3>Красивая дорога</h3>
+            <span>-№4-</span>
+            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li>
+            <h3>Мало туристов</h3>
+            <span>-№5-</span>
+            <p>Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Поиск гостиницы в Седоне</h2>
+        <p><strong>Заинтересовались?</strong></p>
+        <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button type="button">Поиск гостицы в Седоне</button>
+        <form method="get" action="https://echo.htmlacademy.ru/">
+          <fieldset>
+            <p>
+              <label for="check-in-date">Дата заезда:</label>
+              <input id="check-in-date" type="text" name="check-in-date" value="24 апреля 2017">
+            </p>
+            <p>
+              <label for="check-out-date">Дата выезда:</label>
+              <input id="check-out-date" type="text" name="check-out-date" value="4 июля 2017">
+            </p>
+            <p>
+              <label for="number-of-adults">Взрослые:</label>
+              <input id="number-of-adults" type="number" name="number-of-adults" min="1" max="10" value="2">
+              <label for="number-of-kids">Дети:</label>
+              <input id="number-of-kids" type="number" name="number-of-kids" min="0" max="10" value="0">
+            </p>
+              <button type="submit">Найти</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h2>Контакты</h2>
+        <p>
+          #VISITSEDONA<br>
+          ТЕЛ: <a href="tel:+74956660166">+7 (495) 666-01-66</a>
+        </p>
+      </section>
+      <section>
+        <h2>Социальные сети</h2>
+        <ul>
+          <li>
+            <a href="!#">
+              <img src="https://via.placeholder.com/46x48" alt="Логотип Твиттер">
+            </a>
+          </li>
+          <li>
+            <a href="!#">
+              <img src="https://via.placeholder.com/46x48" alt="Логотип Фейсбук">
+            </a>
+          </li>
+          <li>
+            <a href="!#">
+              <img src="https://via.placeholder.com/46x48" alt="Логотип Ютьюб">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <p>
+        WEBSITE BY:
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="https://via.placeholder.com/115x41" alt="Логотип HTML academy">
+        </a>
+      </p>
+    </footer>
 
   </body>
 </html>
