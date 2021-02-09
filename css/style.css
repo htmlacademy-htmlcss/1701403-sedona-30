@@ -275,6 +275,7 @@ img {
 
 .filter {
   background-image: url("../img/background-catalog.jpg");
+  background-color: var(--blue-basic);
   background-size: cover;
   background-repeat: no-repeat;
 }
