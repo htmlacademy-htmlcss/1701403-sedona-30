@@ -5,16 +5,16 @@
   font-weight: 400;
   font-style: normal;
   src: local("PT Sans"),
-       url("ptsans.woff2") format("woff2"),
-       url("ptsans.woff") format("woff");
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
 }
 @font-face {
   font-family: "PT Sans Bold";
   font-weight: 700;
   font-style: normal;
   src: local("PT Sans Bold"),
-       url("ptsans-bold.woff2") format("woff2"),
-       url("ptsans-bold.woff") format("woff");
+       url("../fonts/ptsans-bold.woff2") format("woff2"),
+       url("../fonts/ptsans-bold.woff") format("woff");
 }
 
 
@@ -133,6 +133,7 @@ img {
 .main-navigation {
   position: relative;
   font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: var(--black-text);
@@ -304,6 +305,7 @@ img {
 .feature-item h3,
 .feature-sub-item h4 {
   font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 21px;
   line-height: 22px;
   color: var(--black-text);
@@ -378,6 +380,7 @@ img {
 
 .hotel-search strong {
   font-family: 'PT Sans Bold', Arial, sans-serif;
+  font-weight: bold;
   font-size: 30px;
   line-height: 24px;
   color: var(--black-text);
@@ -424,6 +427,7 @@ img {
 
 .search-form {
   font-family: 'PT Sans Bold', Arial, sans-serif;
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   min-width: 568px;
@@ -606,6 +610,7 @@ img {
 
 .filter legend {
   font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 16px;
   line-height: 21px;
 }
@@ -834,6 +839,7 @@ input[type=number] {
 
 .footer-contacts {
   font-family: 'PT Sans Bold', Arial, sans-serif;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
