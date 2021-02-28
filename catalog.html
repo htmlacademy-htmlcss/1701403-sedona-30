@@ -62,17 +62,20 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="appartment" id="appartment" checked>
-                <label for="appartment">Аппартаменты</label>
+                <label for="appartment">Апартаменты</label>
             </ul>
           </fieldset>
           <fieldset class="filter-by-price">
             <legend>Стоимость в сутки (р):</legend>
             <div class="filter-number">
-              <label for="min-price">От </label>
-              <input type="number" name="min-price" id="min-price" step="100" min="0" value="0">
-              <span>|</span>
-              <label for="max-price">До </label>
-              <input type="number" name="max-price" id="max-price" step="100" min="500" value="3000">
+              <div class="filter-min-price">
+                <label for="min-price">От </label>
+                <input type="number" name="min-price" id="min-price" step="100" min="0" value="0">
+              </div>
+              <div class="filter-max-price">
+                <label for="max-price">До </label>
+                <input type="number" name="max-price" id="max-price" step="100" min="500" value="3000">
+              </div>
             </div>
             <div>Здесь будет слайдер</div>
           </fieldset>
@@ -151,7 +154,7 @@
             </div>
             <div class="catalog-item-details">
               <div class="catalog-item-name"><h3>Villas at Poco Diablo</h3></div>
-              <div class="catalog-item-type">Аппартаменты</div>
+              <div class="catalog-item-type">Апартаменты</div>
               <div class="catalog-item-price">От 2000 р.</div>
               <button class="catalog-button button-details" type="button" name="details">Подробнее</button>
               <button class="catalog-button button-book" type="button" name="book">Забронировать</button>
@@ -172,8 +175,12 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p>
-            #VISITSEDONA<br>
-            ТЕЛ: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+            <div class="hashtag">
+            #VISITSEDONA
+            </div>
+            <div>
+            ТЕЛ: <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+            </div>
           </p>
         </section>
         <section class="footer-social">
@@ -197,7 +204,7 @@
           </ul>
         </section>
         <p class="footer-copyright">
-          WEBSITE BY:
+          WEBSITE BY
           <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg width="115" height="41" xmlns="http://www.w3.org/2000/svg">
               <title>Логотип HTML академии</title>
