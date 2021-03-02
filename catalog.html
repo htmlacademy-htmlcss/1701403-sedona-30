@@ -23,7 +23,7 @@
             <li><a href="blank.html">Информация</a></li>
             <li><a href="blank.html">Фото и видео</a></li>
             <li><a href="blank.html">Карта штата</a></li>
-            <li class="site-navigation-current"><a href="!#">Гостиницы</a></li>
+            <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -62,17 +62,20 @@
               </li>
               <li class="filter-option filter-checkbox">
                 <input type="checkbox" name="appartment" id="appartment" checked>
-                <label for="appartment">Аппартаменты</label>
+                <label for="appartment">Апартаменты</label>
             </ul>
           </fieldset>
           <fieldset class="filter-by-price">
             <legend>Стоимость в сутки (р):</legend>
             <div class="filter-number">
-              <label for="min-price">От </label>
-              <input type="number" name="min-price" id="min-price" step="100" min="0" value="0">
-              <span>|</span>
-              <label for="max-price">До </label>
-              <input type="number" name="max-price" id="max-price" step="100" min="500" value="3000">
+              <div class="filter-min-price">
+                <label for="min-price">От </label>
+                <input type="number" name="min-price" id="min-price" step="100" min="0" value="0">
+              </div>
+              <div class="filter-max-price">
+                <label for="max-price">До </label>
+                <input type="number" name="max-price" id="max-price" step="100" min="500" value="3000">
+              </div>
             </div>
             <div>Здесь будет слайдер</div>
           </fieldset>
@@ -83,12 +86,12 @@
         <p class="filter-result">Найдено: 3</p>
         <div class="catalog-sort-items">
           <h2>Сортировка:</h2>
-          <a class="sort-item-current" href="!#">По цене</a>
-          <a class="sort-item" href="!#">По типу</a>
-          <a class="sort-item" href="!#">По рейтингу</a>
+          <a class="sort-item-current" href="#">По цене</a>
+          <a class="sort-item" href="#">По типу</a>
+          <a class="sort-item" href="#">По рейтингу</a>
         </div>
         <div class="catalog-sort-buttons">
-          <a class="sort-button" href="!#">
+          <a class="sort-button" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <title>Сортировать вверх</title>
               <g fill="currentColor">
@@ -96,7 +99,7 @@
               </g>
             </svg>
           </a>
-          <a class="sort-button sort-button-current" href="!#">
+          <a class="sort-button sort-button-current" href="#">
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <title>Сортировать вниз</title>
               <g fill="currentColor">
@@ -121,9 +124,7 @@
               <button class="catalog-button button-book" type="button" name="book">Забронировать</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="catalog-item-stars">
-                <img src="img/4-stars.svg" width="91" height="17" alt="4 звезды">
-              </div>
+              <div class="amara-resort-spa-stars"></div>
               <div class="item-rating">Рейтинг: 8,5</div>
             </div>
           </li>
@@ -139,9 +140,7 @@
               <button class="catalog-button button-book" type="button" name="book">Забронировать</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="catalog-item-stars">
-                <img src="img/3-stars.svg" width="66" height="17" alt="3 звезды">
-              </div>
+              <div class="desert-quail-inn-starts"></div>
               <div class="item-rating">Рейтинг: 8,9</div>
             </div>
           </li>
@@ -151,15 +150,13 @@
             </div>
             <div class="catalog-item-details">
               <div class="catalog-item-name"><h3>Villas at Poco Diablo</h3></div>
-              <div class="catalog-item-type">Аппартаменты</div>
+              <div class="catalog-item-type">Апартаменты</div>
               <div class="catalog-item-price">От 2000 р.</div>
               <button class="catalog-button button-details" type="button" name="details">Подробнее</button>
               <button class="catalog-button button-book" type="button" name="book">Забронировать</button>
             </div>
             <div class="catalog-item-rating">
-              <div class="catalog-item-stars">
-              <img src="img/2-stars.svg" width="42" height="17" alt="2 звезды">
-              </div>
+              <div class="villas-at-poco-diablo-stars"></div>
               <div class="item-rating">Рейтинг: 9,2</div>
             </div>
           </li>
@@ -172,32 +169,36 @@
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p>
-            #VISITSEDONA<br>
-            ТЕЛ: <a class="contacts-phone" href="tel:+74956660166">+7 (495) 666-01-66</a>
+            <div class="hashtag">
+            #VISITSEDONA
+            </div>
+            <div>
+            ТЕЛ: <a class="contacts-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+            </div>
           </p>
         </section>
         <section class="footer-social">
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul>
             <li class="social-buttons twitter">
-              <a class="social-button" href="!#">
+              <a class="social-button" href="#">
                 <span class="visually-hidden">Твиттер</span>
               </a>
             </li>
             <li class="social-buttons facebook">
-              <a class="social-button" href="!#">
+              <a class="social-button" href="#">
                 <span class="visually-hidden">Фейсбук</span>
               </a>
             </li>
             <li class="social-buttons youtube">
-              <a class="social-button" href="!#">
+              <a class="social-button" href="#">
                 <span class="visually-hidden">Ютьюб</span>
               </a>
             </li>
           </ul>
         </section>
         <p class="footer-copyright">
-          WEBSITE BY:
+          WEBSITE BY
           <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg width="115" height="41" xmlns="http://www.w3.org/2000/svg">
               <title>Логотип HTML академии</title>
