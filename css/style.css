@@ -613,6 +613,7 @@ img {
   margin-left: 72px;
   padding: 0;
 }
+
 .filter-by-type {
   grid-row: 1 / 3;
   margin: 0;
@@ -654,6 +655,8 @@ img {
 
 .filter-option {
   margin-bottom: 25px;
+  max-width: 150px;
+  word-break: break-word;
 }
 
 .filter-checkbox input[type="checkbox"] {
@@ -696,7 +699,7 @@ input[type=number] {
 .filter-max-price {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   height: 22px;
 }
 
@@ -852,9 +855,10 @@ input[type=number] {
 .catalog-item-details {
   justify-self: start;
   display: grid;
-  grid-template-columns: max-content 1fr;
+  grid-template-columns: 110px 1fr;
   column-gap: 6px;
-  grid-template-rows: 33px 20px 43px;
+  grid-template-rows: fit-content fit-content fit-content;
+  word-break: break-word;
 }
 
 .catalog-item-name {
@@ -875,10 +879,40 @@ input[type=number] {
   justify-self: end;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
-  height: 97px;
   margin-right: 72px;
   margin-top: 5px;
+}
+
+.amara-resort-spa-stars::before {
+  content: "";
+  background-image: url("../img/star.svg");
+  width: 91px;
+  height: 17px;
+  position: absolute;
+  right: 110px;
+  background-repeat: space;
+}
+
+.desert-quail-inn-starts::before {
+  content: "";
+  background-image: url("../img/star.svg");
+  width: 66px;
+  height: 17px;
+  position: absolute;
+  right: 110px;
+  background-repeat: space;
+}
+
+.villas-at-poco-diablo-stars::before {
+  content: "";
+  background-image: url("../img/star.svg");
+  width: 42px;
+  height: 17px;
+  position: absolute;
+  right: 110px;
+  background-repeat: space;
 }
 
 .catalog-button {
@@ -889,9 +923,9 @@ input[type=number] {
   color: var(--basic-white);
   text-transform: uppercase;
   border: none;
-  padding: 3px 0 2px;
-  margin-top: 15px;
-  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  height: 27px;
 }
 
 .button-details {
@@ -932,7 +966,7 @@ input[type=number] {
   text-align: center;
   height: 27px;
   line-height: 27px;
-  margin-top: 41px;
+  margin-bottom: 7px;
 }
 
 /* Blank Page */
