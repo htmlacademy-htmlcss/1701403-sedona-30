@@ -302,6 +302,9 @@ img {
   width: 258px;
 }
 
+.feature-item:nth-child(4) .feature-item-text {
+  width: 260px;
+}
 
 .feature-item-image-right {
   grid-column: 1 / -1;
@@ -525,6 +528,7 @@ img {
   font: inherit;
   text-transform: uppercase;
   color: var(--black-text);
+  opacity: 1;
 }
 
 .search-field-date input {
@@ -588,7 +592,7 @@ img {
 
 .form-number-of-people {
   height: 34px;
-  min-width: 34px;
+  width: 35px;
   padding: 0;
   text-align: center;
 }
@@ -777,7 +781,6 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
-  appearance: textfield;
 }
 
 .filter-number {
@@ -1258,6 +1261,11 @@ input[type=number] {
 
 .social-button div:hover {
   background-color: var(--blue-hover);
+}
+
+.social-button:focus div {
+  background-color: var(--blue-hover);
+  outline: 2px solid var(--blue-click);
 }
 
 .social-button div:active {
