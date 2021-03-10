@@ -20,15 +20,16 @@ try {
   isStorageSupport = false;
 }
 
+if (isStorageSupport) {
+  adults.value = storageAdults
+  kids.value = storageKids
+};
+
 formOpenButton.addEventListener("click", function () {
   if (searchForm.classList.contains("search-form-hide")) {
     searchForm.classList.remove("search-form-hide");
     searchForm.classList.add("search-form-open");
     checkInDate.focus();
-    if (isStorageSupport) {
-      adults.value = storageAdults
-      kids.value = storageKids
-    }
   } else {
     searchForm.classList.remove("search-form-open");
     searchForm.classList.add("search-form-hide")
@@ -38,5 +39,10 @@ formOpenButton.addEventListener("click", function () {
 searchForm.addEventListener("submit", function (evt) {
   if (!checkInDate.value || !checkOutDate.value || !adults.value || !kids.value) {
     evt.preventDefault();
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("adults", adults.value);
+      localStorage.setItem("kids", kids.value)
+    }
   }
 });
