@@ -25,6 +25,8 @@ if (isStorageSupport) {
   kids.value = storageKids
 };
 
+searchForm.classList.add("search-form-hide");
+
 formOpenButton.addEventListener("click", function () {
   if (searchForm.classList.contains("search-form-hide")) {
     searchForm.classList.remove("search-form-hide");
