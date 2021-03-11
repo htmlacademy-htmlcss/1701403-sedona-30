@@ -1114,7 +1114,6 @@ input[type=number] {
 .button-details:active {
   background-color: var(--blue-click);
   color: var(--basic-white-opaque);
-  -webkit-text-stroke: 1px var(--basic-back-opaque);
 }
 
 .button-book {
