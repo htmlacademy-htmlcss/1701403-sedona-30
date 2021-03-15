@@ -41,6 +41,9 @@ formOpenButton.addEventListener("click", function () {
 searchForm.addEventListener("submit", function (evt) {
   if (!checkInDate.value || !checkOutDate.value || !adults.value || !kids.value) {
     evt.preventDefault();
+    searchForm.classList.remove("search-form-error");
+    searchForm.offsetWidth = searchForm.offsetWidth;
+    searchForm.classList.add("search-form-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("adults", adults.value);
