@@ -44,6 +44,8 @@
   --footer-background: rgba(255, 255, 255, 0.9);
   --price-toggle: #ABABAB;
   --price-toggle-shadow: rgba(171, 171, 171, 0.3);
+  --page-shadow: rgba(0, 1, 1, 0.2);
+  --form-shadow: rgba(0, 1, 1, 0.15);
 }
 
 
@@ -54,7 +56,7 @@
 }
 
 .page-body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -78,7 +80,7 @@
   width: 1200px;
   min-height: 100%;
   background-color: var(--basic-white);
-  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px var(--page-shadow);
   min-height: 100vh;
 }
 
@@ -180,12 +182,12 @@ img {
 }
 
 .site-navigation li:nth-child(2n) {
-  flex-grow: 1;
   text-align: left;
+  margin-right: 144px;
 }
 
 .site-navigation li:nth-child(4n) {
-  flex-grow: 0;
+  margin-right: 0;
   text-align: right;
 }
 
@@ -281,9 +283,10 @@ img {
 .features-sub-list li {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   margin: 0 auto;
-  margin-bottom: 83px;
+  margin-top: 55px;
+  margin-bottom: 27px;
   min-height: 247px;
   width: 301px;
 }
@@ -375,11 +378,13 @@ img {
 .lodging::before {
   content: url("../img/icon-lodging.svg");
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .food::before {
   content: url("../img/icon-food.svg");
-  margin-bottom: 21px;
+  margin-bottom: 22px;
+  margin-top: 5px;
 }
 
 .souvenirs::before {
@@ -473,7 +478,7 @@ img {
   position: absolute;
   left: 50%;
   margin-left: -284px;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0px 7px 15px var(--form-shadow);
 }
 
 .search-field {
@@ -534,13 +539,14 @@ img {
   text-transform: uppercase;
   color: var(--black-text);
   opacity: 1;
+  line-height: 32px;
 }
 
 .search-field-date input {
-  width: 329px;
+  width: 299px;
   height: 32px;
   padding-left: 10px;
-  padding-right: 3px;
+  padding-right: 33px;
 }
 
 .form-calendar::placeholder {
@@ -1003,7 +1009,7 @@ input[type=number] {
 
 .catalog-item {
   display: grid;
-  grid-template-columns: max-content 1fr 1fr;
+  grid-template-columns: max-content 1fr max-content;
   column-gap: 29px;
   padding-top: 24px;
   padding-bottom: 23px;
@@ -1311,6 +1317,10 @@ input[type=number] {
   animation: slidein 1s;
 }
 
+.search-form-error {
+  animation: shake 0.6s;
+}
+
 /* Animations */
 
 @keyframes slidein {
@@ -1322,5 +1332,27 @@ input[type=number] {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
